@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #bb8450;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    width: 95%; /* Increase container width */
+    max-width: 95%; /* Limit maximum container width */
+    margin-top: 40px; /* Increase top margin */
+    padding: 30px;
+    background-color: #d59b71;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px; /* Increase top margin for heading */
+    font-size: 3em; /* Larger font size for heading */
+    color: #333;
+}
+
+a {
+    color: #1f2a67;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 30px 0; /* Increase vertical margin */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Select Dropdown Styling */
+label {
+    display: block;
+    font-size: 1.2em;
+    margin: 30px 0 20px; /* Increase vertical margin */
+}
+
+select {
+    width: 50%;
+    padding: 15px; /* Increase padding */
+    margin-top: 10px;
+    border: 1px solid #0c0c0c;
+    border-radius: 8px; /* Rounder corners */
+    font-size: 1.1em;
+}
+
+/* Meals Container Styling */
+#mealsContainer, #favoritesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width */
+    gap: 30px; /* Increase gap between items */
+    justify-items: center;
+    margin-top: 30px; /* Increase top margin */
+}
+
+/* Meal and Favorite Meal Card Styling */
+.meal, .favorite-meal {
+    background-color: #ceaa87;
+    border: 1px solid #d14a4a;
+    border-radius: 15px;
+    padding: 20px; /* Increase padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.meal:hover, .favorite-meal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Meal and Favorite Meal Image Styling */
+.meal img, .favorite-meal img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Meal and Favorite Meal Title Styling */
+.meal h2, .favorite-meal h2 {
+    margin: 15px 0; /* Adjust margin */
+    font-size: 1.8em; /* Larger font size */
+    color: #0c0c0c;
+}
+
+/* Meal and Favorite Meal Text Styling */
+.meal p, .meal ul, .meal a, .favorite-meal p, .favorite-meal ul, .favorite-meal a {
+    margin: 10px 0; /* Adjust margin */
+    color: #0c0c0c;
+    font-size: 1em; /* Larger font size */
+}
+
+.meal a, .favorite-meal a {
+    color: #1f2a67;
+    text-decoration: none;
+}
+
+.meal a:hover, .favorite-meal a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.favorite-button, .remove-button {
+    cursor: pointer;
+    color: #1f2a67;
+    text-decoration: underline;
+    font-size: 1em;
+    margin-top: 15px; /* Adjust margin */
+}
+
+.favorite-button:hover, .remove-button:hover {
+    color: darkblue;
+}
+
+/* Cooking Instructions Styling */
+.cooking-instructions {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans for cooking instructions */
+    font-size: 1.1em; /* Slightly larger font size for instructions */
+    line-height: 1.6; /* Increase line height for readability */
+}
